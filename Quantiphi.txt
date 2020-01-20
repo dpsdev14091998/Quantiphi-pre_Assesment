@@ -1,0 +1,21 @@
+Q1.  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        }    
+        ]
+}
+
+Q2. i)JSON Policy which provides ec2 access to a user or a group
+    ii)JSON Policy which deny EC2 by tag
+
+Q3. a) Login into the AWS console.
+    b)Open EC2 console.
+    c)Choose AMIs
+    d)Select launch new instance
+    e)Select the AMI, and then choose Launch.
+    f)Then choose Next:Configure Instance details
+    g)Review the Instance Details, and then choose Review and Launch.
