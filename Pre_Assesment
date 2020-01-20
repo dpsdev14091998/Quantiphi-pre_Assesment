@@ -1,0 +1,86 @@
+AWS Assessment Questions
+
+Q1.  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+        }    
+        ]
+}
+
+Q2. i)JSON Policy which provides ec2 access to a user or a group
+    ii)JSON Policy which deny EC2 by tag
+
+Q3. a) Login into the AWS console.
+    b)Open EC2 console.
+    c)Choose AMIs
+    d)Select launch new instance
+    e)Select the AMI, and then choose Launch.
+    f)Then choose Next:Configure Instance details
+    g)Review the Instance Details, and then choose Review and Launch.
+
+Q4. a)Select S3 from services
+    b)Select the desired bucket
+    c)Click on "Properties"
+    d)Click the Static website Hosting
+    e)Select use the bucket to host a website
+    f) Enter index.html as the index document.
+
+Q5. a)Login to AWS management console and navigate to VPC console.
+    b)Select create VPC
+    c)Enter Name Tag, IPv4 CIDR Block and left the remaining fields.
+    d)To create a public subnet, click on subnets -> enter the subnet name -> make sure to select the VPC which you have cretaed earlier -> Then enter the IPV4 CIDR Block
+    e)To create a private subnet, same steps as public subnet but only the difference in IPV4 CIDR Block.
+    f)Then create and attach Internet Gateway, by default it will be detached, then attach it to the VPC.
+    g)Then the status will be chaged to attached.s
+    h)Then add a route to public subnet, it will establish connection between public subnet and internet gateway.
+
+
+GCP Assessments questions:
+
+Q1. a)Navigate to the VPC networks page in GCP console
+    b)Select Create VPC network, Enter a name for it
+    c) Choose Automatic for the subnet creation mode
+    d)In the Firewall rules section, select one or more predefined firewall rules that address common use cases for connectivity to VMs. If you don't want to use them, select no rules. You can create your own firewall rules after you create the network.
+    e)Choose Dynamic routing mode
+    f)Finally click on create.
+
+Q2. a)Open IAM and admin page
+    b)Select and open the project.
+    c)Identify the account to which role is to be added.
+    d)Select one or more roles to apply to the service account
+    e)Finally click on save
+
+Q3. Creating a bucket
+    a)Open the Cloud Storage browser in the Google Cloud Console.
+    b)Click Create bucket to open the bucket creation form.
+    c)Enter the bucket information -> Specify a name -> Select a default storage class for a bucket -> Select a location where the bucket data will be permanently stored.
+    d)Select an access control method
+    e)Click on done
+
+    Copying files using gsutil:
+    a) Install Google Cloud SDK on your local system and use the following command.
+    b)Use gcloud  init to login into your Gcloud account and select the project.
+    c)Use gsutil cp local-loaction/filename gs://bucketname/ to copy the required files from local system onto the storage bucket of your cloud.
+
+ 
+
+
+Linux:
+
+Q1. $ grep -o -i mauris example.txt | wc -l
+
+Q2. find . -type f-name"*.txt"
+
+Q3. find . -type f -name "aws*" 
+
+Q4. sed -i 's/original_word/new_word/g' file.txt
+
+Q5. sudo find /home -name test.txt
+
+
+
+    
